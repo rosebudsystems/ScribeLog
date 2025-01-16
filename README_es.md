@@ -14,6 +14,7 @@ ScribeLog es una biblioteca ligera de Python para registrar mensajes en archivos
 ## Instalación
 
 Para instalar ScribeLog, ejecuta:
+
 ```bash
 pip install ScribeLog
 ```
@@ -34,6 +35,19 @@ Log("Otro mensaje de prueba.", time=False)
 
 # Recuperar la ruta actual del archivo de registro
 print(GetPathLogin())
+```
+
+## Manejo de Errores
+
+Si la ruta del archivo de registro no es válida o no cumple con los requisitos, se generará un `FileError`. Por ejemplo:
+
+```python
+from ScribeLog import ConfigLog, FileError
+
+try:
+    ConfigLog("/ruta/no/valida/archivo.txt")
+except FileError as e:
+    print(f"Ocurrió un error: {e}")
 ```
 
 ## Licencia
