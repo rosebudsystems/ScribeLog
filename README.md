@@ -14,6 +14,7 @@ ScribeLog is a lightweight Python library for logging messages to text files. It
 ## Installation
 
 To install ScribeLog, run:
+
 ```bash
 pip install ScribeLog
 ```
@@ -34,6 +35,19 @@ Log("Another test message.", time=False)
 
 # Retrieve the current log file path
 print(GetPathLogin())
+```
+
+## Error Handling
+
+If the log file path is invalid or doesn't meet the requirements, a `FileError` will be raised. For example:
+
+```python
+from ScribeLog import ConfigLog, FileError
+
+try:
+    ConfigLog("/invalid/path/to/file.txt")
+except FileError as e:
+    print(f"An error occurred: {e}")
 ```
 
 ## License
