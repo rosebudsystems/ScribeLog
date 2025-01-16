@@ -1,12 +1,7 @@
 #logger_module.py
 import datetime
 from pathlib import Path
-
-class FileError(Exception):
-    def __init__(self, message, code=1930):
-        super().__init__(message)
-        self.codigo = code
-        self.desript = "Error in file or path validation."
+from .exception import FileError
 
 class FileLogger:
     def __init__(self, pathLogin=None):

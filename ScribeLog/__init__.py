@@ -1,5 +1,6 @@
 # __init__.py
 from .logger_module import FileLogger
+from .exception import FileError
 
 # Crear una instancia global
 _FileLogger_instance = FileLogger()
