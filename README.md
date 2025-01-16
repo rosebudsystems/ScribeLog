@@ -1,6 +1,11 @@
-# ScribeLog
+[![PyPI version](https://badge.fury.io/py/ScribeLog.svg?icon=si%3Apython&icon_color=%231ca7e3)](https://badge.fury.io/py/ScribeLog)
 
-[Read this in English](README.md) | [Leer esto en español](README_es.md)
+<div align="center">
+  <img src="https://raw.githubusercontent.com/rosebudsystems/ScribeLog/main/docs/img/scribelog_logo.jpeg" alt="ScribeLog Logo" width="300">
+</div>
+
+• [Readme in English](https://github.com/rosebudsystems/ScribeLog/blob/main/README.md)
+• [Readme en español](https://github.com/rosebudsystems/ScribeLog/blob/main/README_es.md)
 
 ScribeLog is a lightweight Python library for logging messages to text files. It offers path validation and optional timestamp support for your log entries.
 
